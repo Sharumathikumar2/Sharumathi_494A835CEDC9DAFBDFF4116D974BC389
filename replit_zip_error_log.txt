@@ -1,1 +1,14 @@
-{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .cache/replit/modules/python-3.10:v25-20230920-d4ad2e4","time":"2023-09-25T14:12:21Z"}
+def linear_search_product(product_list, target_product):
+    indices = []
+    
+    for i in range(len(product_list)):
+        if product_list[i] == target_product:
+            indices.append(i)
+    
+    return indices
+
+# Example usage:
+products = ["Apple", "Banana", "Orange", "Apple", "Mango", "Apple"]
+target = "Apple"
+result = linear_search_product(products, target)
+print("Indices of", target, "in the list:", result)
